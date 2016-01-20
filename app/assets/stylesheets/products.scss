@@ -1,0 +1,32 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{font-family: "futura-pt-condensed","a-otf-ud-shin-go-pr6n";}
+.pho{  max-width: 400px;  }
+.phot{  max-width: 80px;  border-radius: 50%;}
+table{
+  border-collapse: collapse;
+tbody tr:nth-child(2n+1){background-color: #eee;}
+td:first-child{text-align: center;  border-left: solid 1px #eee;}
+td:nth-last-child(3){text-align: right;}
+th{border: solid 1px #eee;}
+th,td{word-break:keep-all; border-right: solid 1px #eee;  padding: 10px;}
+tr:nth-child(2n+1) td{ border-right: solid 1px #fff;}
+}
+a {
+ max-width: 100px;
+ display:block;
+ float: left;
+ text-decoration: none;
+ margin: 5px;
+ padding: 3px;
+ border-radius: 2px;
+ box-shadow: 1px 1px 2px #000;
+ background: -moz-linear-gradient(top, #fff, #eee);/* Firefox用 */
+ background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));/* Safari,Google Chrome用 */
+}
+a:hover{
+ box-shadow: 1px 1px 1px #000;
+ background: -moz-linear-gradient(top, #ddd, #999);/* Firefox用 */
+ background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#999));/* Safari,Google Chrome用 */
+}

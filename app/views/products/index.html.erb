@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Products</h1>
+<!-- 追加箇所開始 -->
+<%= page_entries_info @products %>
+<!-- 追加箇所終了 -->
+<div  class="infinite-table">
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name<br>（名前）</th>
+      <th>Description<br>（説明）</th>
+      <th>Price<br>（価格）</th>
+      <th>Image<br>（ロボット）</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render :partial => 'products', :object => @products %>
+
+  </tbody>
+</table>
+ <p class="pagination">
+    <%= link_to_next_page(@products, 'Next Page', :remote => true) %>
+  </p>
+</div>
+ <p class="pagination">
+ <!-- 追加箇所開始 -->
+<%= paginate @products, views_prefix: :products %>
+<!-- 追加箇所終了 -->
+  </p>
+  <br>
+
+<%= link_to 'New Product', new_product_path %>

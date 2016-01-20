@@ -1,0 +1,50 @@
+ja:
+  activerecord:
+    models:
+      address: 住所録
+    attributes:
+      address:
+        namae: 名前
+        yubin: 郵便
+        jusho: 住所
+        denwa: 電話
+
+  label:
+    Editing_address: 住所録の更新
+    Listing_addresses: 住所録一覧
+    New_address: 住所録への新規登録
+    Namae: 名前
+    Yubin: 郵便
+    Jusho: 住所
+    Denwa: 電話
+  link:
+    New_Product: 追加
+    Show: 表示
+    Edit: 編集
+    Destroy: 削除
+    Back: 前画面
+  button:
+    Create: 新規登録実行
+    Update: 更新実行
+  views:
+    pagination:
+      first:    "最初のページ"
+      last:     "最後のページ"
+      previous: "&lsaquo;前"
+      next:     "次&rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "No %{entry_name} found"
+          one: "<b>1</b> %{entry_name}を表示"
+          other: "<b>all %{count}</b> %{entry_name}を表示"
+      more_pages:
+        display_entries: "%{entry_name} の<b>%{first}件目&nbsp;-&nbsp;%{last}件目</b>を表示 （全体で<b>%{total}</b>件）"
+  link:
+    New_address: 追加
+    Show: 表示
+    Edit: 編集
+    Destroy: 削除
+    Back: 前画面

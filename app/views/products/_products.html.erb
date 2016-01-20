@@ -1,0 +1,12 @@
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.id %></td>
+    <td><%= product.name %></td>
+    <td><%= product.description %></td>
+    <td><%= product.price %></td>
+    <td><%= image_tag(product.image, class: 'phot', alt: product.name) %></td>
+    <td><%= link_to t('link.Show'), product %><br>
+    <%= link_to t('link.Edit'), edit_product_path(product) %><br>
+    <%= link_to t('link.Destroy'), product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
